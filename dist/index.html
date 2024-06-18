@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Graph with Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Select Criteria for Line Graph</h2>
+    <form id="criteria-form">
+        <label for="stateDropdown">State:</label>
+        <select id="stateDropdown">
+            <option value="" selected>Select a state</option>
+        </select>
+
+        <label for="districtDropdown">District:</label>
+        <select id="districtDropdown">
+            <option value="" selected>Select a district</option>
+        </select>
+
+        <label for="cropDropdown">Crop:</label>
+        <select id="cropDropdown">
+            <option value="" selected>Select a crop</option>
+        </select>
+    </form>
+
+    <h2>Data Table</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>District</th>
+                <th>Crop</th>
+                <th>Season</th>
+                <th>NPK Ratio</th>
+                <th>Harvest</th>
+                <th>Rainfall</th>
+                <th>Irrigation</th>
+                <th>Soil Requirements</th>
+                <th>Soil pH</th>
+                <th>Cost of Cultivation</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+   <div id="container">
+    <h2>Line Graph</h2>
+    <canvas id="productionChart" width="800" height="400"></canvas>
+   </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
